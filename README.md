@@ -6,6 +6,42 @@ An enterprise-grade, scalable AI-powered application designed to automate form p
 
 This repository uses a multi-module clean architecture containing decoupled folders for Frontend, Backend, Machine Learning, and configuration modules.
 
+
+User
+   │
+   ▼
+Select Form Type
+   │
+   ▼
+Upload PDF / DOCX / Image
+   │
+   ▼
+OCR
+   │
+   ▼
+Text Cleaning
+   │
+   ▼
+Entity Extraction
+   │
+   ▼
+JSON Standardization
+   │
+   ▼
+Semantic Field Mapping
+   │
+   ▼
+Dynamic Form Generation
+   │
+   ▼
+Auto Fill
+   │
+   ▼
+Review & Edit
+   │
+   ▼
+Submit / Export
+
 ```
 .
 ├── .github/                   # GitHub CI/CD configurations
