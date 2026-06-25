@@ -1,0 +1,54 @@
+{
+  "form_type": "Invoice",
+  "icon": "Receipt",
+  "description": "Business invoice / tax invoice form",
+  "sections": [
+    {
+      "id": "invoice_details",
+      "title": "Invoice Details",
+      "icon": "Receipt",
+      "fields": [
+        { "id": "invoice_number", "label": "Invoice Number", "type": "text", "required": true, "placeholder": "INV-998822", "entity_keys": ["invoice_number"] },
+        { "id": "invoice_date", "label": "Invoice Date", "type": "date", "required": true, "placeholder": "YYYY-MM-DD", "entity_keys": ["dob"] },
+        { "id": "due_date", "label": "Due Date", "type": "date", "required": false, "placeholder": "YYYY-MM-DD", "entity_keys": [] },
+        { "id": "po_number", "label": "PO Number", "type": "text", "required": false, "placeholder": "PO-10023", "entity_keys": [] }
+      ]
+    },
+    {
+      "id": "vendor_details",
+      "title": "Vendor / Seller Details",
+      "icon": "Building",
+      "fields": [
+        { "id": "vendor_name", "label": "Vendor Name", "type": "text", "required": true, "placeholder": "Acme Corporation", "entity_keys": ["company", "organization"] },
+        { "id": "vendor_email", "label": "Vendor Email", "type": "email", "required": false, "placeholder": "billing@vendor.com", "entity_keys": ["email"] },
+        { "id": "vendor_phone", "label": "Vendor Phone", "type": "phone", "required": false, "placeholder": "+1 555-666-7777", "entity_keys": ["phone", "phone_number"] },
+        { "id": "vendor_address", "label": "Vendor Address", "type": "textarea", "required": false, "placeholder": "Full vendor address", "entity_keys": ["address"] },
+        { "id": "tax_id", "label": "Tax ID / GST Number", "type": "text", "required": false, "placeholder": "TX-8877", "entity_keys": ["pan_number"] }
+      ]
+    },
+    {
+      "id": "customer_details",
+      "title": "Customer / Buyer Details",
+      "icon": "Users",
+      "fields": [
+        { "id": "customer_name", "label": "Customer Name", "type": "text", "required": true, "placeholder": "John Doe", "entity_keys": ["name", "person_name"] },
+        { "id": "customer_email", "label": "Customer Email", "type": "email", "required": false, "placeholder": "customer@email.com", "entity_keys": [] },
+        { "id": "customer_phone", "label": "Customer Phone", "type": "phone", "required": false, "placeholder": "+91 9876543210", "entity_keys": [] },
+        { "id": "customer_address", "label": "Billing Address", "type": "textarea", "required": false, "placeholder": "Full billing address", "entity_keys": [] }
+      ]
+    },
+    {
+      "id": "payment_details",
+      "title": "Payment Details",
+      "icon": "DollarSign",
+      "fields": [
+        { "id": "subtotal", "label": "Subtotal", "type": "text", "required": false, "placeholder": "$450.00", "entity_keys": [] },
+        { "id": "tax_rate", "label": "Tax Rate (%)", "type": "text", "required": false, "placeholder": "18%", "entity_keys": [] },
+        { "id": "tax_amount", "label": "Tax Amount", "type": "text", "required": false, "placeholder": "$45.00", "entity_keys": [] },
+        { "id": "total_amount", "label": "Total Amount", "type": "text", "required": true, "placeholder": "$495.00", "entity_keys": [] },
+        { "id": "payment_status", "label": "Payment Status", "type": "dropdown", "required": false, "options": ["Paid", "Pending", "Overdue", "Cancelled"], "entity_keys": [] },
+        { "id": "payment_method", "label": "Payment Method", "type": "dropdown", "required": false, "options": ["Bank Transfer", "Credit Card", "Debit Card", "Cash", "UPI", "Cheque"], "entity_keys": [] }
+      ]
+    }
+  ]
+}

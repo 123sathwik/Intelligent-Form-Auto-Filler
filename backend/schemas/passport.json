@@ -1,0 +1,25 @@
+{
+  "form_type": "Passport",
+  "icon": "Globe",
+  "description": "Passport application / details form",
+  "sections": [
+    {
+      "id": "passport_details",
+      "title": "Passport Details",
+      "icon": "Globe",
+      "fields": [
+        { "id": "passport_number", "label": "Passport Number", "type": "text", "required": true, "placeholder": "Z1234567", "entity_keys": ["passport_number"] },
+        { "id": "surname", "label": "Surname / Last Name", "type": "text", "required": true, "placeholder": "KRISHNA", "entity_keys": ["name", "person_name"] },
+        { "id": "given_names", "label": "Given Names", "type": "text", "required": true, "placeholder": "VAMSI", "entity_keys": ["name", "person_name"] },
+        { "id": "nationality", "label": "Nationality", "type": "text", "required": true, "placeholder": "INDIAN", "entity_keys": ["nationality"] },
+        { "id": "dob", "label": "Date of Birth", "type": "date", "required": true, "placeholder": "YYYY-MM-DD", "entity_keys": ["dob", "date_of_birth"] },
+        { "id": "gender", "label": "Gender / Sex", "type": "dropdown", "required": true, "options": ["M", "F", "X"], "entity_keys": ["gender"] },
+        { "id": "place_of_birth", "label": "Place of Birth", "type": "text", "required": false, "placeholder": "Hyderabad", "entity_keys": ["city"] },
+        { "id": "place_of_issue", "label": "Place of Issue", "type": "text", "required": false, "placeholder": "Hyderabad Passport Office", "entity_keys": ["city"] },
+        { "id": "date_of_issue", "label": "Date of Issue", "type": "date", "required": false, "placeholder": "YYYY-MM-DD", "entity_keys": ["dob"] },
+        { "id": "date_of_expiry", "label": "Date of Expiry", "type": "date", "required": false, "placeholder": "YYYY-MM-DD", "entity_keys": [] },
+        { "id": "country_code", "label": "Country Code", "type": "text", "required": false, "placeholder": "IND", "entity_keys": ["country"] }
+      ]
+    }
+  ]
+}

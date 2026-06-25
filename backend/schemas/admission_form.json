@@ -1,0 +1,50 @@
+{
+  "form_type": "Admission Form",
+  "icon": "School",
+  "description": "College or university admission application form",
+  "sections": [
+    {
+      "id": "personal_details",
+      "title": "Personal Details",
+      "icon": "User",
+      "fields": [
+        { "id": "name", "label": "Student Name", "type": "text", "required": true, "placeholder": "Vamsi Krishna", "entity_keys": ["name", "person_name"] },
+        { "id": "dob", "label": "Date of Birth", "type": "date", "required": true, "placeholder": "YYYY-MM-DD", "entity_keys": ["dob", "date_of_birth"] },
+        { "id": "gender", "label": "Gender", "type": "dropdown", "required": true, "options": ["Male", "Female", "Other"], "entity_keys": ["gender"] },
+        { "id": "nationality", "label": "Nationality", "type": "text", "required": false, "placeholder": "Indian", "entity_keys": ["nationality"] },
+        { "id": "category", "label": "Category", "type": "dropdown", "required": false, "options": ["General", "OBC", "SC", "ST", "EWS"], "entity_keys": [] },
+        { "id": "father_name", "label": "Father's Name", "type": "text", "required": false, "placeholder": "Father's full name", "entity_keys": ["father_name"] },
+        { "id": "mother_name", "label": "Mother's Name", "type": "text", "required": false, "placeholder": "Mother's full name", "entity_keys": ["mother_name"] },
+        { "id": "aadhaar_number", "label": "Aadhaar Number", "type": "text", "required": false, "placeholder": "1234 5678 9012", "entity_keys": ["aadhaar_number"] }
+      ]
+    },
+    {
+      "id": "academic_details",
+      "title": "Academic Details",
+      "icon": "GraduationCap",
+      "fields": [
+        { "id": "course_applied", "label": "Course Applied", "type": "text", "required": true, "placeholder": "B.Tech Computer Science", "entity_keys": ["degree"] },
+        { "id": "branch_preference", "label": "Branch Preference", "type": "text", "required": false, "placeholder": "Artificial Intelligence", "entity_keys": ["branch"] },
+        { "id": "previous_college", "label": "Previous Institution", "type": "text", "required": false, "placeholder": "XYZ Jr College", "entity_keys": ["college"] },
+        { "id": "board", "label": "Board / University", "type": "text", "required": false, "placeholder": "CBSE / TSBIE", "entity_keys": ["university"] },
+        { "id": "percentage_10th", "label": "10th Percentage", "type": "text", "required": false, "placeholder": "95%", "entity_keys": [] },
+        { "id": "percentage_12th", "label": "12th Percentage / CGPA", "type": "text", "required": false, "placeholder": "92%", "entity_keys": ["percentage", "cgpa"] },
+        { "id": "entrance_exam", "label": "Entrance Exam", "type": "text", "required": false, "placeholder": "JEE, EAMCET, etc.", "entity_keys": [] },
+        { "id": "rank", "label": "Rank / Score", "type": "text", "required": false, "placeholder": "1234", "entity_keys": [] }
+      ]
+    },
+    {
+      "id": "contact_details",
+      "title": "Contact Details",
+      "icon": "Mail",
+      "fields": [
+        { "id": "email", "label": "Email Address", "type": "email", "required": true, "placeholder": "student@email.com", "entity_keys": ["email"] },
+        { "id": "phone", "label": "Phone Number", "type": "phone", "required": true, "placeholder": "+91 9876543210", "entity_keys": ["phone", "phone_number"] },
+        { "id": "address", "label": "Residential Address", "type": "textarea", "required": false, "placeholder": "Full address", "entity_keys": ["address"] },
+        { "id": "city", "label": "City", "type": "text", "required": false, "placeholder": "Hyderabad", "entity_keys": ["city"] },
+        { "id": "state", "label": "State", "type": "text", "required": false, "placeholder": "Telangana", "entity_keys": ["state"] },
+        { "id": "pincode", "label": "Pincode", "type": "text", "required": false, "placeholder": "500034", "entity_keys": ["pincode"] }
+      ]
+    }
+  ]
+}

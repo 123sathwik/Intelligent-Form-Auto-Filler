@@ -1,0 +1,15 @@
+rules_version = '2';
+
+service firebase.storage {
+  match /b/{bucket}/o {
+    // True if user is authenticated
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+
+    // Match files uploaded into the user's specific path
+    match /users/{userId}/{allPaths=**} {
+      allow read, write: if isAuthenticated() && request.auth.uid == userId;
+    }
+  }
+}

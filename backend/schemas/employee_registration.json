@@ -1,0 +1,50 @@
+{
+  "form_type": "Employee Registration",
+  "icon": "Briefcase",
+  "description": "New employee onboarding and registration form",
+  "sections": [
+    {
+      "id": "personal_details",
+      "title": "Personal Details",
+      "icon": "User",
+      "fields": [
+        { "id": "name", "label": "Full Name", "type": "text", "required": true, "placeholder": "Vamsi Krishna", "entity_keys": ["name", "person_name"] },
+        { "id": "dob", "label": "Date of Birth", "type": "date", "required": true, "placeholder": "YYYY-MM-DD", "entity_keys": ["dob", "date_of_birth"] },
+        { "id": "gender", "label": "Gender", "type": "dropdown", "required": true, "options": ["Male", "Female", "Other"], "entity_keys": ["gender"] },
+        { "id": "nationality", "label": "Nationality", "type": "text", "required": false, "placeholder": "Indian", "entity_keys": ["nationality"] },
+        { "id": "father_name", "label": "Father's Name", "type": "text", "required": false, "placeholder": "Father's full name", "entity_keys": ["father_name"] },
+        { "id": "aadhaar_number", "label": "Aadhaar Number", "type": "text", "required": false, "placeholder": "1234 5678 9012", "entity_keys": ["aadhaar_number"] },
+        { "id": "pan_number", "label": "PAN Number", "type": "text", "required": true, "placeholder": "ABCDE1234F", "entity_keys": ["pan_number"] }
+      ]
+    },
+    {
+      "id": "employment_details",
+      "title": "Employment Details",
+      "icon": "Briefcase",
+      "fields": [
+        { "id": "employee_id", "label": "Employee ID", "type": "text", "required": false, "placeholder": "EMP-0012", "entity_keys": ["employee_id"] },
+        { "id": "designation", "label": "Designation / Job Title", "type": "text", "required": true, "placeholder": "Software Engineer", "entity_keys": [] },
+        { "id": "department", "label": "Department", "type": "text", "required": false, "placeholder": "Engineering", "entity_keys": [] },
+        { "id": "date_of_joining", "label": "Date of Joining", "type": "date", "required": false, "placeholder": "YYYY-MM-DD", "entity_keys": [] },
+        { "id": "employment_type", "label": "Employment Type", "type": "dropdown", "required": false, "options": ["Full-time", "Part-time", "Contract", "Intern"], "entity_keys": [] },
+        { "id": "company", "label": "Company Name", "type": "text", "required": false, "placeholder": "Google LLC", "entity_keys": ["company", "organization"] },
+        { "id": "salary", "label": "Annual Salary (CTC)", "type": "text", "required": false, "placeholder": "₹ 12,00,000", "entity_keys": [] },
+        { "id": "experience", "label": "Previous Experience", "type": "textarea", "required": false, "placeholder": "Prior work experience", "entity_keys": ["experience"] },
+        { "id": "skills", "label": "Key Skills", "type": "textarea", "required": false, "placeholder": "Python, React, Docker...", "entity_keys": ["skills"] }
+      ]
+    },
+    {
+      "id": "contact_details",
+      "title": "Contact Details",
+      "icon": "Mail",
+      "fields": [
+        { "id": "email", "label": "Work Email", "type": "email", "required": true, "placeholder": "name@company.com", "entity_keys": ["email"] },
+        { "id": "phone", "label": "Phone Number", "type": "phone", "required": true, "placeholder": "+91 9876543210", "entity_keys": ["phone", "phone_number"] },
+        { "id": "address", "label": "Residential Address", "type": "textarea", "required": false, "placeholder": "Full address", "entity_keys": ["address"] },
+        { "id": "city", "label": "City", "type": "text", "required": false, "placeholder": "Hyderabad", "entity_keys": ["city"] },
+        { "id": "state", "label": "State", "type": "text", "required": false, "placeholder": "Telangana", "entity_keys": ["state"] },
+        { "id": "pincode", "label": "Pincode", "type": "text", "required": false, "placeholder": "500034", "entity_keys": ["pincode"] }
+      ]
+    }
+  ]
+}

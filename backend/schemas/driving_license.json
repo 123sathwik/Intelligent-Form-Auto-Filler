@@ -1,0 +1,27 @@
+{
+  "form_type": "Driving License",
+  "icon": "Car",
+  "description": "Driving License application and details form",
+  "sections": [
+    {
+      "id": "license_details",
+      "title": "License Details",
+      "icon": "Car",
+      "fields": [
+        { "id": "driving_license_number", "label": "Driving License Number", "type": "text", "required": true, "placeholder": "DL1420110068991", "entity_keys": ["driving_license_number"] },
+        { "id": "name", "label": "Holder's Name", "type": "text", "required": true, "placeholder": "Vamsi Krishna", "entity_keys": ["name", "person_name"] },
+        { "id": "father_or_spouse_name", "label": "Father's / Spouse's Name", "type": "text", "required": false, "placeholder": "Ramakrishna Prasad", "entity_keys": ["father_name"] },
+        { "id": "dob", "label": "Date of Birth", "type": "date", "required": true, "placeholder": "YYYY-MM-DD", "entity_keys": ["dob", "date_of_birth"] },
+        { "id": "gender", "label": "Gender", "type": "dropdown", "required": false, "options": ["Male", "Female", "Other"], "entity_keys": ["gender"] },
+        { "id": "blood_group", "label": "Blood Group", "type": "dropdown", "required": false, "options": ["A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O-"], "entity_keys": [] },
+        { "id": "address", "label": "Residential Address", "type": "textarea", "required": false, "placeholder": "Full address", "entity_keys": ["address"] },
+        { "id": "city", "label": "City", "type": "text", "required": false, "placeholder": "Hyderabad", "entity_keys": ["city"] },
+        { "id": "state", "label": "State", "type": "text", "required": false, "placeholder": "Telangana", "entity_keys": ["state"] },
+        { "id": "pincode", "label": "Pincode", "type": "text", "required": false, "placeholder": "500034", "entity_keys": ["pincode"] },
+        { "id": "license_class", "label": "License Class", "type": "text", "required": false, "placeholder": "LMV, MCWG", "entity_keys": [] },
+        { "id": "date_of_issue", "label": "Date of Issue", "type": "date", "required": false, "placeholder": "YYYY-MM-DD", "entity_keys": [] },
+        { "id": "date_of_expiry", "label": "Date of Expiry", "type": "date", "required": false, "placeholder": "YYYY-MM-DD", "entity_keys": [] }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "form_type": "Aadhaar",
+  "icon": "Fingerprint",
+  "description": "Aadhaar card details and verification form",
+  "sections": [
+    {
+      "id": "aadhaar_details",
+      "title": "Aadhaar Card Details",
+      "icon": "Fingerprint",
+      "fields": [
+        { "id": "aadhaar_number", "label": "Aadhaar Number", "type": "text", "required": true, "placeholder": "1234 5678 9012", "entity_keys": ["aadhaar_number"] },
+        { "id": "name", "label": "Full Name", "type": "text", "required": true, "placeholder": "Vamsi Krishna", "entity_keys": ["name", "person_name"] },
+        { "id": "dob", "label": "Date of Birth", "type": "date", "required": true, "placeholder": "YYYY-MM-DD", "entity_keys": ["dob", "date_of_birth"] },
+        { "id": "gender", "label": "Gender", "type": "dropdown", "required": true, "options": ["Male", "Female", "Transgender"], "entity_keys": ["gender"] },
+        { "id": "father_or_spouse_name", "label": "Father's / Spouse's Name", "type": "text", "required": false, "placeholder": "Ramakrishna Prasad", "entity_keys": ["father_name"] },
+        { "id": "address", "label": "Residential Address", "type": "textarea", "required": false, "placeholder": "Full address as per Aadhaar", "entity_keys": ["address"] },
+        { "id": "city", "label": "City / District", "type": "text", "required": false, "placeholder": "Hyderabad", "entity_keys": ["city"] },
+        { "id": "state", "label": "State", "type": "text", "required": false, "placeholder": "Telangana", "entity_keys": ["state"] },
+        { "id": "pincode", "label": "Pincode", "type": "text", "required": false, "placeholder": "500034", "entity_keys": ["pincode"] }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "form_type": "Resume",
+  "icon": "FileText",
+  "description": "Professional resume / CV for job applications",
+  "sections": [
+    {
+      "id": "personal_information",
+      "title": "Personal Information",
+      "icon": "User",
+      "fields": [
+        { "id": "name", "label": "Full Name", "type": "text", "required": true, "placeholder": "John Doe", "entity_keys": ["name", "person_name"] },
+        { "id": "dob", "label": "Date of Birth", "type": "date", "required": false, "placeholder": "YYYY-MM-DD", "entity_keys": ["dob", "date_of_birth"] },
+        { "id": "gender", "label": "Gender", "type": "dropdown", "required": false, "options": ["Male", "Female", "Other"], "entity_keys": ["gender"] },
+        { "id": "nationality", "label": "Nationality", "type": "text", "required": false, "placeholder": "Indian", "entity_keys": ["nationality"] },
+        { "id": "father_name", "label": "Father's Name", "type": "text", "required": false, "placeholder": "Father's full name", "entity_keys": ["father_name"] },
+        { "id": "mother_name", "label": "Mother's Name", "type": "text", "required": false, "placeholder": "Mother's full name", "entity_keys": ["mother_name"] }
+      ]
+    },
+    {
+      "id": "contact_information",
+      "title": "Contact Information",
+      "icon": "Mail",
+      "fields": [
+        { "id": "email", "label": "Email Address", "type": "email", "required": true, "placeholder": "john@example.com", "entity_keys": ["email"] },
+        { "id": "phone", "label": "Phone Number", "type": "phone", "required": true, "placeholder": "+91 9876543210", "entity_keys": ["phone", "phone_number"] },
+        { "id": "address", "label": "Address", "type": "textarea", "required": false, "placeholder": "Full residential address", "entity_keys": ["address"] },
+        { "id": "city", "label": "City", "type": "text", "required": false, "placeholder": "Hyderabad", "entity_keys": ["city"] },
+        { "id": "state", "label": "State", "type": "text", "required": false, "placeholder": "Telangana", "entity_keys": ["state"] },
+        { "id": "pincode", "label": "Pincode / ZIP", "type": "text", "required": false, "placeholder": "500034", "entity_keys": ["pincode"] },
+        { "id": "linkedin", "label": "LinkedIn Profile", "type": "text", "required": false, "placeholder": "linkedin.com/in/username", "entity_keys": ["linkedin"] },
+        { "id": "github", "label": "GitHub Profile", "type": "text", "required": false, "placeholder": "github.com/username", "entity_keys": ["github"] }
+      ]
+    },
+    {
+      "id": "education",
+      "title": "Education",
+      "icon": "GraduationCap",
+      "fields": [
+        { "id": "college", "label": "College / Institute", "type": "text", "required": false, "placeholder": "ABC Engineering College", "entity_keys": ["college"] },
+        { "id": "university", "label": "University", "type": "text", "required": false, "placeholder": "Stanford University", "entity_keys": ["university"] },
+        { "id": "degree", "label": "Degree", "type": "text", "required": false, "placeholder": "B.Tech", "entity_keys": ["degree"] },
+        { "id": "branch", "label": "Branch / Major", "type": "text", "required": false, "placeholder": "Computer Science", "entity_keys": ["branch"] },
+        { "id": "cgpa", "label": "CGPA / GPA", "type": "text", "required": false, "placeholder": "9.4", "entity_keys": ["cgpa"] },
+        { "id": "percentage", "label": "Percentage", "type": "text", "required": false, "placeholder": "94%", "entity_keys": ["percentage"] }
+      ]
+    },
+    {
+      "id": "professional",
+      "title": "Professional Experience",
+      "icon": "Briefcase",
+      "fields": [
+        { "id": "company", "label": "Current Company", "type": "text", "required": false, "placeholder": "Google LLC", "entity_keys": ["company", "organization"] },
+        { "id": "experience", "label": "Work Experience", "type": "textarea", "required": false, "placeholder": "Describe your experience", "entity_keys": ["experience"] },
+        { "id": "skills", "label": "Skills", "type": "textarea", "required": false, "placeholder": "Python, React, Docker...", "entity_keys": ["skills"] },
+        { "id": "projects", "label": "Projects", "type": "textarea", "required": false, "placeholder": "Key projects", "entity_keys": ["projects"] },
+        { "id": "certificates", "label": "Certificates", "type": "textarea", "required": false, "placeholder": "AWS Certified, etc.", "entity_keys": ["certificates"] }
+      ]
+    }
+  ]
+}

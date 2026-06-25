@@ -1,0 +1,48 @@
+{
+  "form_type": "Insurance Claim",
+  "icon": "Shield",
+  "description": "Insurance claim submission and processing form",
+  "sections": [
+    {
+      "id": "claimant_details",
+      "title": "Claimant Details",
+      "icon": "User",
+      "fields": [
+        { "id": "claimant_name", "label": "Claimant Name", "type": "text", "required": true, "placeholder": "Vamsi Krishna", "entity_keys": ["name", "person_name"] },
+        { "id": "dob", "label": "Date of Birth", "type": "date", "required": false, "placeholder": "YYYY-MM-DD", "entity_keys": ["dob", "date_of_birth"] },
+        { "id": "gender", "label": "Gender", "type": "dropdown", "required": false, "options": ["Male", "Female", "Other"], "entity_keys": ["gender"] },
+        { "id": "email", "label": "Email Address", "type": "email", "required": true, "placeholder": "claimant@email.com", "entity_keys": ["email"] },
+        { "id": "phone", "label": "Phone Number", "type": "phone", "required": true, "placeholder": "+91 9876543210", "entity_keys": ["phone", "phone_number"] },
+        { "id": "address", "label": "Address", "type": "textarea", "required": false, "placeholder": "Full address", "entity_keys": ["address"] },
+        { "id": "aadhaar_number", "label": "Aadhaar Number", "type": "text", "required": false, "placeholder": "1234 5678 9012", "entity_keys": ["aadhaar_number"] },
+        { "id": "pan_number", "label": "PAN Number", "type": "text", "required": false, "placeholder": "ABCDE1234F", "entity_keys": ["pan_number"] }
+      ]
+    },
+    {
+      "id": "policy_details",
+      "title": "Policy Details",
+      "icon": "FileText",
+      "fields": [
+        { "id": "policy_number", "label": "Policy Number", "type": "text", "required": true, "placeholder": "POL-998822", "entity_keys": ["registration_number"] },
+        { "id": "insurer_name", "label": "Insurance Company", "type": "text", "required": false, "placeholder": "LIC of India", "entity_keys": ["company", "organization"] },
+        { "id": "policy_type", "label": "Policy Type", "type": "dropdown", "required": false, "options": ["Health", "Life", "Vehicle", "Home", "Travel", "Other"], "entity_keys": [] },
+        { "id": "policy_start_date", "label": "Policy Start Date", "type": "date", "required": false, "placeholder": "YYYY-MM-DD", "entity_keys": [] },
+        { "id": "policy_end_date", "label": "Policy End Date", "type": "date", "required": false, "placeholder": "YYYY-MM-DD", "entity_keys": [] },
+        { "id": "sum_insured", "label": "Sum Insured", "type": "text", "required": false, "placeholder": "₹ 5,00,000", "entity_keys": [] }
+      ]
+    },
+    {
+      "id": "claim_details",
+      "title": "Claim Details",
+      "icon": "AlertCircle",
+      "fields": [
+        { "id": "claim_date", "label": "Claim Date", "type": "date", "required": true, "placeholder": "YYYY-MM-DD", "entity_keys": [] },
+        { "id": "incident_date", "label": "Incident Date", "type": "date", "required": false, "placeholder": "YYYY-MM-DD", "entity_keys": [] },
+        { "id": "claim_amount", "label": "Claim Amount", "type": "text", "required": true, "placeholder": "₹ 50,000", "entity_keys": [] },
+        { "id": "incident_description", "label": "Incident Description", "type": "textarea", "required": false, "placeholder": "Describe the incident", "entity_keys": [] },
+        { "id": "hospital_name", "label": "Hospital / Service Provider", "type": "text", "required": false, "placeholder": "City Hospital", "entity_keys": ["organization"] },
+        { "id": "claim_status", "label": "Claim Status", "type": "dropdown", "required": false, "options": ["Submitted", "Under Review", "Approved", "Rejected", "Settled"], "entity_keys": [] }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "form_type": "PAN Card",
+  "icon": "CreditCard",
+  "description": "PAN Card details for income tax and identity purposes",
+  "sections": [
+    {
+      "id": "pan_details",
+      "title": "PAN Card Details",
+      "icon": "CreditCard",
+      "fields": [
+        { "id": "pan_number", "label": "PAN Number", "type": "text", "required": true, "placeholder": "ABCDE1234F", "entity_keys": ["pan_number"] },
+        { "id": "name", "label": "Cardholder Name", "type": "text", "required": true, "placeholder": "Vamsi Krishna", "entity_keys": ["name", "person_name"] },
+        { "id": "father_name", "label": "Father's Name", "type": "text", "required": true, "placeholder": "Ramakrishna Prasad", "entity_keys": ["father_name"] },
+        { "id": "dob", "label": "Date of Birth", "type": "date", "required": true, "placeholder": "YYYY-MM-DD", "entity_keys": ["dob", "date_of_birth"] },
+        { "id": "card_type", "label": "Card Type / Category", "type": "dropdown", "required": false, "options": ["Individual", "Company", "HUF", "Firm", "AOP / BOI", "Trust"], "entity_keys": [] },
+        { "id": "email", "label": "Email Address", "type": "email", "required": false, "placeholder": "john@example.com", "entity_keys": ["email"] },
+        { "id": "phone", "label": "Phone Number", "type": "phone", "required": false, "placeholder": "+91 9876543210", "entity_keys": ["phone", "phone_number"] }
+      ]
+    }
+  ]
+}

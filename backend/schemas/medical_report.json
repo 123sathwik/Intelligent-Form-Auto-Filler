@@ -1,0 +1,37 @@
+{
+  "form_type": "Medical Report",
+  "icon": "HeartPulse",
+  "description": "Patient medical report and clinical details form",
+  "sections": [
+    {
+      "id": "patient_details",
+      "title": "Patient Details",
+      "icon": "User",
+      "fields": [
+        { "id": "patient_name", "label": "Patient Name", "type": "text", "required": true, "placeholder": "Full name", "entity_keys": ["name", "person_name"] },
+        { "id": "patient_id", "label": "Patient ID", "type": "text", "required": false, "placeholder": "PAT-9988", "entity_keys": ["registration_number"] },
+        { "id": "dob", "label": "Date of Birth", "type": "date", "required": false, "placeholder": "YYYY-MM-DD", "entity_keys": ["dob", "date_of_birth"] },
+        { "id": "age", "label": "Age", "type": "number", "required": false, "placeholder": "24", "entity_keys": ["age"] },
+        { "id": "gender", "label": "Gender", "type": "dropdown", "required": false, "options": ["Male", "Female", "Other"], "entity_keys": ["gender"] },
+        { "id": "blood_group", "label": "Blood Group", "type": "dropdown", "required": false, "options": ["A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O-", "Unknown"], "entity_keys": [] },
+        { "id": "phone", "label": "Contact Number", "type": "phone", "required": false, "placeholder": "+91 9876543210", "entity_keys": ["phone", "phone_number"] },
+        { "id": "address", "label": "Address", "type": "textarea", "required": false, "placeholder": "Patient's address", "entity_keys": ["address"] }
+      ]
+    },
+    {
+      "id": "clinical_details",
+      "title": "Clinical Information",
+      "icon": "Stethoscope",
+      "fields": [
+        { "id": "report_date", "label": "Report Date", "type": "date", "required": false, "placeholder": "YYYY-MM-DD", "entity_keys": ["dob"] },
+        { "id": "doctor_name", "label": "Doctor's Name", "type": "text", "required": false, "placeholder": "Dr. Arthur Conan", "entity_keys": [] },
+        { "id": "hospital", "label": "Hospital / Clinic", "type": "text", "required": false, "placeholder": "City Health Care", "entity_keys": ["organization", "company"] },
+        { "id": "diagnosis", "label": "Diagnosis", "type": "textarea", "required": false, "placeholder": "Primary diagnosis", "entity_keys": [] },
+        { "id": "symptoms", "label": "Symptoms", "type": "textarea", "required": false, "placeholder": "Presenting symptoms", "entity_keys": [] },
+        { "id": "tests_performed", "label": "Tests Performed", "type": "textarea", "required": false, "placeholder": "CBC, X-Ray, etc.", "entity_keys": [] },
+        { "id": "recommendations", "label": "Treatment / Recommendations", "type": "textarea", "required": false, "placeholder": "Prescribed treatment", "entity_keys": [] },
+        { "id": "follow_up_date", "label": "Follow-up Date", "type": "date", "required": false, "placeholder": "YYYY-MM-DD", "entity_keys": [] }
+      ]
+    }
+  ]
+}

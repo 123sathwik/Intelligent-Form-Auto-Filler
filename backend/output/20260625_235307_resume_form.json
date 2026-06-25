@@ -1,0 +1,20 @@
+{
+  "metadata": {
+    "form_type": "Resume",
+    "source_filename": "test.pdf",
+    "submitted_at": "2026-06-25T23:53:07.813400",
+    "output_file": "20260625_235307_resume_form.json",
+    "stats": {
+      "auto_filled": 2,
+      "empty": 1,
+      "total": 3
+    }
+  },
+  "form_data": {
+    "personal_information": {
+      "name": "Vamsi Krishna",
+      "email": "vamsi@test.com"
+    }
+  },
+  "autofill_map": {}
+}
